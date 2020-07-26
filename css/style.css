@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Raleway';
+	background: #f1f1f1;
+	margin-bottom: max(50px, calc(35px + env(safe-area-inset-bottom)));
+}
+
+#lang-change-md {
+    position: absolute;
+    top: 25px;
+    right: max(25px, env(safe-area-inset-right));
+}
+
+#lang-flag {
+    width: 20px;
+    height: 20px;
+}
+
+#bio {
+    border-right: 1px solid #e9ecef;
+}
+
+#profiles {
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+}
+
+#contacts {
+    border-left: 1px solid #e9ecef;
+}
+
+#recaptcha-modal-content {
+	background-color: transparent !important;
+	border: 0px !important;
+}
+
+.g-recaptcha {
+	position: absolute;
+	left: 50%;
+	margin-left: -152px;
+}
+
+@media only screen and (max-width: 320px) {
+	.g-recaptcha {
+		-webkit-transform: scale(0.77);
+		-moz-transform: scale(0.77);
+		-ms-transform: scale(0.77);
+		-o-transform: scale(0.77);
+		transform: scale(0.77);
+	}
+}
+
+@media only screen and (max-width: 250px) {
+	.g-recaptcha {
+		-webkit-transform: scale(0.67);
+		-moz-transform: scale(0.67);
+		-ms-transform: scale(0.67);
+		-o-transform: scale(0.67);
+		transform: scale(0.67);
+	}
+}
+
+@media only screen and (max-width: 220px) {
+	.g-recaptcha {
+		-webkit-transform: scale(0.57);
+		-moz-transform: scale(0.57);
+		-ms-transform: scale(0.57);
+		-o-transform: scale(0.57);
+		transform: scale(0.57);
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: max(50px, calc(35px + env(safe-area-inset-bottom)));
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: max(15px, env(safe-area-inset-bottom));
+	color: #bfbfbf;
+	width: 100%;
+}
