@@ -7,6 +7,7 @@ $age = DateTime::createFromFormat('d/m/Y', '26/09/1997', $tz)
 
 $languages = array(
     'it' => array(
+        'change_language_alt' => "Passa alla lingua italiana.",
         'flag_file' => "img/it.png",
         'bio' => "
             <h3>Su di me</h3>\n
@@ -40,6 +41,7 @@ $languages = array(
             </ul>"
     ),
     'en' => array(
+        'change_language_alt' => "Change language to English.",
         'flag_file' => "img/us.png",
         'bio' => "
             <h3>About me</h3>\n

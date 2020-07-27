@@ -17,7 +17,7 @@ body {
     right: max(25px, env(safe-area-inset-right));
 }
 
-#lang-flag {
+.lang-flag {
     width: 20px;
     height: 20px;
 }

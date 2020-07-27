@@ -13,13 +13,14 @@ if(isset($_GET['lang']) && $_GET['lang'] == "it") {
     $lang_alternative = "en";
 }
     
-$lang_change_md = "<a class='d-none d-md-block' href='?lang=$lang_alternative' id='lang-change-md'><img src='".$languages[$lang_alternative]['flag_file']."' id='lang-flag'></a>";
+$lang_change_md = "<a class='d-none d-md-block' href='?lang=$lang_alternative' id='lang-change-md'><img src='".$languages[$lang_alternative]['flag_file']."' class='lang-flag' alt='".$languages[$lang_alternative]['change_language_alt']."'></a>";
 
-$lang_change = "<a class='d-md-none float-right' href='?lang=$lang_alternative'><img src='".$languages[$lang_alternative]['flag_file']."' id='lang-flag'></a>";
+$lang_change = "<a class='d-md-none float-right' href='?lang=$lang_alternative'><img src='".$languages[$lang_alternative]['flag_file']."' class='lang-flag' alt='".$languages[$lang_alternative]['change_language_alt']."'></a>";
 
 ?>
 
-<html lang=<?php echo $lang ?>>
+<!DOCTYPE html>
+<html lang="<?php echo $lang ?>">
 
 <head>
     <meta charset="utf-8">
